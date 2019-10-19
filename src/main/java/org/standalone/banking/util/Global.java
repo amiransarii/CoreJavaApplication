@@ -14,9 +14,9 @@ public class Global {
 	//this one is used which mode need to test
 	 public  static boolean isDebugEnabled=log.isDebugEnabled();
 	//properties file name
-	 public  static final String configFile="bankingapp..properties";
+	 public  static final String configFile="bankingapp.properties";
 	 //db class name
-	  public static String dbClassName="";
+	  public static String dbClassName="com.mysql.cj.jdbc.Driver";
 	  public static String dbURL="";
 	  public static String dbUser="";
 	  public static String dbPass="";
@@ -27,6 +27,7 @@ public class Global {
 			 Config cfg= new Config(configFile);
 			 isDebugEnabled=cfg.getPropertySafely("app_debug", isDebugEnabled);
 			 dbClassName=cfg.getPropertySafely("db_classname", dbClassName);
+			 dbUser=cfg.getPropertySafely("db_user", dbUser);
 			 dbURL=cfg.getPropertySafely("db_url", dbURL);
 			 dbPass=cfg.getPropertySafely("db_pass", dbPass);
 		 }

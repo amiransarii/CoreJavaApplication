@@ -9,7 +9,7 @@ import org.standalone.banking.util.LogUtils;
 public class DbRegisteredUser {
 	 private static LogUtils log= new LogUtils(DbRegisteredUser.class.getName()); 
 		
-	 public static boolean isValidateUser(String userName,String userPass) {
+	 public static boolean isValidateUser1(String userName,String userPass) {
 		String sqlQuery="select * from registrationtable where email=? and password=?";
 		 try {
 			 PreparedStatement psmt=DbPreparedStatement.getPreparedStatement(sqlQuery);

@@ -1,4 +1,4 @@
-package org.standalone.banking.constant;
+package org.standalone.banking.util;
 
 public class DBConstant {
 	public static String DBCLASSNAME="com.mysql.cj.jdbc.Driver";
