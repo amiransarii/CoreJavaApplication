@@ -134,6 +134,9 @@ public abstract class BaseActivity {
 	protected static void showCustomerByID(int id) throws BankingCompileTimeException {
 		try {
 			CustomerInfo cust = BankingDbActions.getCustomerById(id);
+			
+			if(cust==null)
+				throw new BankingCompileTimeException("Record does not exist", ErrorCode.NULLPOINTERCODE);
 			System.out.println("Record of Customer " + cust.getCustID() + "**********************");
 			System.out.println("Customer ID " + cust.getCustID());
 			System.out.println("Full Name " + cust.getFullName());
@@ -228,6 +231,8 @@ public abstract class BaseActivity {
 			log.info("Unable to withdraw ");
 		}
 	}
+	
+	
 	
 	
 
