@@ -3,13 +3,6 @@ package org.standalone.banking.util;
 import java.io.Serializable;
 
 /**
- * <code>AppsStringUtils</code> utility class of [Character-string] relationship.
- * Contains method to manipulate strings. Provides following functionality :
- * <ol>Do the padding</ol>
- * <ol>Set the color to the character of the specified location</ol>
- * <ol>Cut in the number of characters that is specified a string</ol>
- * <ol>String is determined whether or not "0"</ol>
- *
  * @author Amir Ansari
  */
 
